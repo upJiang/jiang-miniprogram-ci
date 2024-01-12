@@ -3,19 +3,19 @@ description: "Based on the miniprogram-ci.A GitHub Action to automate deploying 
 author: "jiang"
 inputs:
   projectPath:
-    description: "项目路径，比如 dist、uniapp 项目一般是 dist/build/mp-weixin"
+    description: "projectPath"
     required: true
   privatekey:
-    description: "github 项目设置中的 privatekey，如：${{ secrets.PRIVATE_KEY }}"
+    description: "privatekey"
     required: true
   version:
-    description: "版本号"
+    description: "Version"
     required: false
   desc:
-    description: "本次提交的修改描述"
+    description: "description"
     required: false
   robot:
-    description: "机器人编号，默认是1"
+    description: "robot"
     required: false
 runs:
   using: "node16"

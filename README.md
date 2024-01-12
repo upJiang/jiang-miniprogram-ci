@@ -38,7 +38,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Upload
-        uses: jiang/jiang-miniprogram-ci@main
+        uses: upJiang/jiang-miniprogram-ci@main
         with:
           mode: upload
           project-path: dist/build/mp-weixin
