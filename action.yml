@@ -20,4 +20,4 @@ inputs:
 runs:
   using: "node16"
   main: "index.js"
-  pre: "./pre-script.sh"
+  pre: "./pre/install.js"
