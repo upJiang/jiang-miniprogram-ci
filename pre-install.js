@@ -1,5 +1,11 @@
-// 使用 ES6 导入语句
-import { execSync } from "child_process";
+const { execSync } = require("child_process");
 
-// 执行 Shell 脚本
-execSync("./pre-script.sh");
+function exec(command) {
+  execSync(command, {
+    cwd: __dirname,
+    stdio: "inherit",
+  });
+}
+
+exec("npm install yarn -g");
+exec("yarn --frozen-lockfile");
