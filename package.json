@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "微信小程序自动集成CI的github action",
   "main": "index.js",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/upJiang/jiang-miniprogram-ci.git"
