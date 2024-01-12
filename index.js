@@ -29,7 +29,7 @@ async function run() {
       appid,
       type: "miniProgram",
       projectPath,
-      privateKeyPath: privatekey,
+      privateKey: privatekey,
       ignores: ["node_modules/**/*"],
     });
 
