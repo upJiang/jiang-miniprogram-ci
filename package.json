@@ -1,7 +1,7 @@
 {
   "name": "jiang-miniprogram-ci",
   "version": "1.0.0",
-  "description": "微信小程序自动集成CI的github action",
+  "description": "微信小程序自动集成 CI 的 Github Action",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 # jiang-miniprogram-ci
 
-基于 `miniprogram-ci` 的一款微信小程序发布版本的自动集成
+微信小程序代码提交后自动发布体验版的 `Github Action`，基于 `miniprogram-ci`
 
 使用方式：
 
@@ -19,7 +19,7 @@
   - **desc**：本次提交的修改描述
   - **version**：本次提交的版本号
 
-`.github/workflows/upload.yaml` 写入以下代码
+`.github/workflows/upload.yaml` 写入以下代码，触发时机可以自行调整
 
 ```
 name: 上传小程序体验版
@@ -40,7 +40,6 @@ jobs:
       - name: Upload
         uses: upJiang/jiang-miniprogram-ci@main
         with:
-          mode: upload
           project-path: dist/build/mp-weixin
           private-key: ${{ secrets.PRIVATE_KEY }}
 ```
