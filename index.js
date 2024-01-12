@@ -1,7 +1,7 @@
 const core = require("@actions/core");
 const fs = require("fs");
 const path = require("path");
-import * as ci from "miniprogram-ci";
+const ci = require("miniprogram-ci");
 
 async function run() {
   try {
