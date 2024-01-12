@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "微信小程序自动集成CI的github action",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

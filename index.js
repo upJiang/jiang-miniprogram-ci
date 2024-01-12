@@ -10,7 +10,7 @@ async function run() {
 
     // 构建完整的 project.config.json 路径
     const projectConfigPath = path.join(projectPath, "project.config.json");
-
+    console.log("projectConfigPath", projectConfigPath);
     // 读取和解析 project.config.json 文件
     const projectConfig = JSON.parse(
       fs.readFileSync(projectConfigPath, "utf8")
@@ -22,7 +22,7 @@ async function run() {
     // 版本信息
     const version = core.getInput("version") || "1.0.0";
     // 本次提交的描述
-    const description = core.getInput("description") || "更新部分功能";
+    const description = core.getInput("desc") || "更新部分功能";
 
     // 创建 Project 实例
     const project = new ci.Project({
