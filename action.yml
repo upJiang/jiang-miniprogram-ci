@@ -1,0 +1,22 @@
+name: "jiang-miniprogram-ci"
+description: "Based on the miniprogram-ci.A GitHub Action to automate deploying WeChat MiniProgram. "
+author: "jiang"
+inputs:
+  projectPath:
+    description: "项目路径，比如 dist、uniapp 项目一般是 dist/build/mp-weixin"
+    required: true
+  privatekey:
+    description: "github 项目设置中的 privatekey，如：${{ secrets.PRIVATE_KEY }}"
+    required: true
+  version:
+    description: "版本号"
+    required: false
+  desc:
+    description: "本次提交的修改描述"
+    required: false
+  robot:
+    description: "机器人编号，默认是1"
+    required: false
+runs:
+  using: "node16"
+  main: "index.js"
