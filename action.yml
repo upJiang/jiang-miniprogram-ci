@@ -2,10 +2,10 @@ name: "jiang-miniprogram-ci"
 description: "Based on the miniprogram-ci.A GitHub Action to automate deploying WeChat MiniProgram. "
 author: "jiang"
 inputs:
-  projectPath:
+  project-path:
     description: "projectPath"
     required: true
-  privatekey:
+  private-key:
     description: "privatekey"
     required: true
   version:

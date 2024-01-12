@@ -5,8 +5,8 @@ const ci = require("miniprogram-ci");
 
 async function run() {
   try {
-    const projectPath = core.getInput("projectPath", { required: true });
-    const privatekey = core.getInput("privatekey", { required: true });
+    const projectPath = core.getInput("project-path", { required: true });
+    const privatekey = core.getInput("private-key", { required: true });
 
     // 构建完整的 project.config.json 路径
     const projectConfigPath = path.join(projectPath, "project.config.json");
