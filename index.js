@@ -2,6 +2,7 @@ const core = require("@actions/core");
 const fs = require("fs");
 const path = require("path");
 const ci = require("miniprogram-ci");
+const dayjs = require("dayjs");
 
 async function run() {
   try {
@@ -22,7 +23,8 @@ async function run() {
     // 版本信息
     const version = core.getInput("version") || "1.0.0";
     // 本次提交的描述
-    const description = core.getInput("desc") || "更新部分功能";
+    const description =
+      core.getInput("desc") || `更新于${dayjs().format("YYYY-MM-DD HH:mm:ss")}`;
 
     // 创建 Project 实例
     const project = new ci.Project({
